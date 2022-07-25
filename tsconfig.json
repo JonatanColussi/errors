@@ -1,0 +1,10 @@
+{
+  "extends": "@colussi/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "outDir": "./lib",
+  },
+  "allowDeclarations": true,
+  "include": ["src/**/*"]
+}
