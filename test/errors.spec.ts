@@ -13,6 +13,7 @@ import {
   ServiceUnavailableError,
   TimeoutError,
   TooManyRequestsError,
+  UnprocessableEntityError,
 } from '../src/errors';
 
 describe('error', () => {
@@ -29,6 +30,7 @@ describe('error', () => {
     [ServiceUnavailableError, httpStatus.SERVICE_UNAVAILABLE],
     [TimeoutError, httpStatus.GATEWAY_TIMEOUT],
     [TooManyRequestsError, httpStatus.TOO_MANY_REQUESTS],
+    [UnprocessableEntityError, httpStatus.UNPROCESSABLE_ENTITY],
   ])('should create %p error properly with %i status', (ErrorType, status) => {
     const error = new ErrorType('');
 

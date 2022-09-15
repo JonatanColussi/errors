@@ -10,3 +10,4 @@ export * from './RequestError';
 export * from './ServiceUnavailableError';
 export * from './TimeoutError';
 export * from './TooManyRequestsError';
+export * from './UnprocessableEntityError';

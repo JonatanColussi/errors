@@ -26,6 +26,7 @@ Errors exposed in this package extends the Error class, and have a `status` prop
 | ServiceUnavailableError | 503 | SERVICE_UNAVAILABLE | message |
 | TimeoutError | 504 | GATEWAY_TIMEOUT | message |
 | TooManyRequestsError | 429 | TOO_MANY_REQUESTS | message |
+| UnprocessableEntityError | 422 | UNPROCESSABLE_ENTITY | message |
 
 ### example
 
